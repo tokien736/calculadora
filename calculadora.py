@@ -105,12 +105,18 @@ while True:
         elif opc == 5:
             system("cls")
             print("Gracias por Ingresar al Programa")
-            break                                                                   
+            break  
+        elif opc > 5:
+            print("Opción incorrecta! Vuelva a ingresar la opción")
+
+
     except ValueError:
         print("Por favor, ingrese solo números")
         respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
         if respuesta == "n":
             break
+
+
      
 
 
