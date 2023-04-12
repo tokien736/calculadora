@@ -40,18 +40,18 @@ while True:
         print("5. Salir")
 
 
-        opc = int(input("Ingrese una opcion: "))
+        opc = int(input("Ingrese una opción: "))
         if opc == 1:
             while True:
                 try:
                     print("=====SUMA=====")
-                    x = int(input("Ingrese el primero numero: "))
-                    y = int(input("Ingrese el segundo numero: "))
+                    x = int(input("Ingrese el primero número: "))
+                    y = int(input("Ingrese el segundo número: "))
                     c = Calculadora(x, y) 
                     c.suma()
                     break
                 except ValueError:
-                    print("Por favor, ingrese solo numeros")
+                    print("Por favor, ingrese solo números")
                     respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
                     if respuesta == "n":
                         break
@@ -59,8 +59,8 @@ while True:
             while True:
                 try:
                     print("=====RESTA=====")
-                    x = int(input("Ingrese el primero numero: "))
-                    y = int(input("Ingrese el segundo numero: "))
+                    x = int(input("Ingrese el primer número: "))
+                    y = int(input("Ingrese el segundo número: "))
                     c = Calculadora(x, y) 
                     c.resta()
                     break
@@ -73,13 +73,13 @@ while True:
             while True:
                 try:
                     print("=====MULTIPLICACIÓN=====")
-                    x = int(input("Ingrese el primero numero: "))
-                    y = int(input("Ingrese el segundo numero: "))
+                    x = int(input("Ingrese el primer número: "))
+                    y = int(input("Ingrese el segundo número: "))
                     c = Calculadora(x, y) 
                     c.multiplicacion()
                     break
                 except ValueError:
-                    print("Por favor, ingrese solo numeros")
+                    print("Por favor, ingrese solo números ")
                     respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
                     if respuesta == "n":
                         break       
@@ -87,18 +87,18 @@ while True:
             while True:
                 try:
                     print("=====DIVISION=====")
-                    x = int(input("Ingrese el primero numero: "))
-                    y = int(input("Ingrese el segundo numero: "))
+                    x = int(input("Ingrese el primer número: "))
+                    y = int(input("Ingrese el segundo número: "))
                     c = Calculadora(x, y) 
                     c.division()
                     break
                 except ValueError:
-                    print("Por favor, ingrese solo numeros")
+                    print("Por favor, ingrese solo números")
                     respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
                     if respuesta == "n":
                         break      
                 except ZeroDivisionError:
-                    print("ALERTA, ESTA DIVIDIENDO UN NUMERO ENTRE CERO")
+                    print("¡ALERTA ESTA DIVIDIENDO UN NÚMERO ENTRE CERO!")
                     respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
                     if respuesta == "n":
                         break     
@@ -107,7 +107,7 @@ while True:
             print("Gracias por Ingresar al Programa")
             break                                                                   
     except ValueError:
-        print("Por favor, ingrese solo numeros")
+        print("Por favor, ingrese solo números")
         respuesta = input("Desea volver a ingresar los datos? [s/n]: ")
         if respuesta == "n":
             break
